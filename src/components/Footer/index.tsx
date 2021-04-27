@@ -65,17 +65,17 @@ export default function Footer() {
     {
       name: 'YFII',
       img: YFII,
-      link: 'https://dfi.money/#/'
+      link: 'https://backup.finance'
     },
     {
       name: 'YFII MOON',
       img: YFII_MOON,
-      link: 'https://moon.unisave.exchange/#/'
+      link: 'https://exchange.backup.finance/'
     },
     {
       name: 'NASH',
       img: NASH,
-      link: 'http://www.nashpt.co/'
+      link: 'http://bsc.backup.finance/'
     }
   ]
 

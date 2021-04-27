@@ -91,13 +91,14 @@ export const UNI: { [chainId in ChainId]: Token } = {
     ChainId.BSC_MAINNET,
     '0x68275b82335F1E5590E59a3FaCBcf7d6F432C750',
     18,
+    'Unisave'
     'Backup'
   ),
   [ChainId.BSC_TESTNET]: new Token(
     ChainId.BSC_TESTNET,
     '0x68275b82335F1E5590E59a3FaCBcf7d6F432C750',
     18,
-    'Backup',
+    'Unisave'
   ),
   [ChainId.HECO_MAINNET]: null!, // TODO: Add Heco mainnet y3d Token
   [ChainId.HECO_TESTNET]: null!, // TODO: Add Heco mainnet y3d Token

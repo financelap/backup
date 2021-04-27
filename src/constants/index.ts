@@ -78,29 +78,26 @@ export const H_T_DAI = new Token(
 // TODO this is only approximate, it's actually based on blocks
 export const PROPOSAL_LENGTH_IN_DAYS = 7
 
-export const GOVERNANCE_ADDRESS = '0x5e4be8Bc9637f0EAA1A755019e06A68ce081D58F'
+export const GOVERNANCE_ADDRESS = '0xB594eB091B1cC711879Ce5379F5fd06C4b028833'
 
 const UNI_ADDRESS = '0x68275b82335F1E5590E59a3FaCBcf7d6F432C750'
 export const UNI: { [chainId in ChainId]: Token } = {
-  [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Unisave'),
-  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'UNI', 'Unisave'),
-  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, UNI_ADDRESS, 18, 'UNI', 'Unisave'),
-  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, UNI_ADDRESS, 18, 'UNI', 'Unisave'),
-  [ChainId.KOVAN]: new Token(ChainId.KOVAN, UNI_ADDRESS, 18, 'UNI', 'Unisave'),
+  [ChainId.MAINNET]: new Token(ChainId.MAINNET, UNI_ADDRESS, 18, 'UNI', 'Backup'),
+  [ChainId.RINKEBY]: new Token(ChainId.RINKEBY, UNI_ADDRESS, 18, 'UNI', 'Backup'),
+  [ChainId.ROPSTEN]: new Token(ChainId.ROPSTEN, UNI_ADDRESS, 18, 'UNI', 'Backup'),
+  [ChainId.GÖRLI]: new Token(ChainId.GÖRLI, UNI_ADDRESS, 18, 'UNI', 'Backup'),
+  [ChainId.KOVAN]: new Token(ChainId.KOVAN, UNI_ADDRESS, 18, 'UNI', 'Backup'),
   [ChainId.BSC_MAINNET]: new Token(
     ChainId.BSC_MAINNET,
     '0x68275b82335F1E5590E59a3FaCBcf7d6F432C750',
     18,
-    'BEST',
-    'Unisave'
     'Backup'
   ),
   [ChainId.BSC_TESTNET]: new Token(
     ChainId.BSC_TESTNET,
-    '0x12e2fcfA079Fc23aE82Ab82707b402410321103f',
+    '0x68275b82335F1E5590E59a3FaCBcf7d6F432C750',
     18,
-    'BEST',
-    'Unisave'
+    'Backup',
   ),
   [ChainId.HECO_MAINNET]: null!, // TODO: Add Heco mainnet y3d Token
   [ChainId.HECO_TESTNET]: null!, // TODO: Add Heco mainnet y3d Token
@@ -109,7 +106,7 @@ export const UNI: { [chainId in ChainId]: Token } = {
 
 // TODO: specify merkle distributor for mainnet
 export const MERKLE_DISTRIBUTOR_ADDRESS: { [chainId in ChainId]?: string } = {
-  [ChainId.MAINNET]: '0x090D4613473dEE047c3f2706764f49E0821D256e'
+  [ChainId.MAINNET]: '0xB594eB091B1cC711879Ce5379F5fd06C4b028833'
 }
 
 const WETH_ONLY: ChainTokenList = {
